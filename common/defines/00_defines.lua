@@ -495,7 +495,7 @@ NAir = {
 	COMBAT_SITUATION_PASS_CHANCE = 0.6, 				-- Chance for pass. Nobody hits nobody in current situation.
 	COMBAT_MAX_WINGS_AT_ONCE = 6, 						-- Max amount of air wings in one combat simulation. The higher value, the quicker countries may loose their wings. It's a gameplay balance value.
 	COMBAT_MAX_WINGS_AT_GROUND_ATTACK = 30,	        	-- we can really pounce a land strike and escalate
-	COMBAT_MAX_WINGS_AT_ONCE_PORT_STRIKE = 1000,        -- we can really pounce a naval strike and escalate
+	COMBAT_MAX_WINGS_AT_ONCE_PORT_STRIKE = 200,        -- ORIGINAL: 1000 we can really pounce a naval strike and escalate
 	COMBAT_ATTACK_PASSES_AT_ONCE = 0.1,					-- Wing attack stat determines of many re-approaches in single combat they do. This is a scale of this amount to balance the gameplay. Less retries = less bloody combats, and less calculations for the CPU.
 	AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.04,           -- air superiority scale = superiority/(pixels*this)
 	COMBAT_SUP_VS_SUP_ATTACK_CHANCE_SPEED_DIFF = 0.25, 	-- How much diff in speed between aircrafts affects the chance of who attacks first in superiority vs superiority.
@@ -661,7 +661,7 @@ NNavy = {
 	CARRIER_STACK_PENALTY_EFFECT = 0.2,								-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 	SUBMARINE_HIDE_TIMEOUT = 4,										-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
 	SHORE_BOMBARDMENT_CAP = 0.25,
-	ANTI_AIR_TARGETING = 0.9,                                       -- how good ships are at hitting aircraft
+	ANTI_AIR_TARGETING = 1,                                       -- ORIGINAL: 0.9 how good ships are at hitting aircraft
 	MISSION_CONVOY_RAIDING_SPREAD_BASE = 0.32,
 	MISSION_CONVOY_ESCORT_SPREAD_BASE = 0.1,
 	MISSION_DEFAULT_SPREAD_BASE = 0.8,
@@ -742,7 +742,7 @@ NAI = {
 	PRODUCTION_EQUIPMENT_SURPLUS_FACTOR = 0.25,	-- Base value for how much of currently used equipment the AI will at least strive to have in stock
 	AIR_CONTROLLED_TERRITORY_INTERCEPT_SCORE = 6,	-- Interception score per controlled state in mission region
 	AIR_ALLY_TERRITORY_INTERCEPT_SCORE = 3,		-- Interception score per ally controlled state in mission region
-	INTERCEPT_NAVAL_BOMBING_FACTOR = 3.0,		-- Factors the weight of intercepting naval bombers in sea regions where friendly ships are
+	INTERCEPT_NAVAL_BOMBING_FACTOR = 5.0,		-- ORIGINAL: 3.0 Factors the weight of intercepting naval bombers in sea regions where friendly ships are
 	AIR_CAS_SCORE_FACTOR = 0.05,				-- Factor applied to (friendly units) x (enemy units)) to get CAS score for region
 	AIR_ENEMY_SUPERIORITY_FACTOR = 2.0,			-- How much enemy air superiority counts relative to own
 	AIR_SUPERIORITY_FACTOR = 4.0,				-- Factor for air superiority score
